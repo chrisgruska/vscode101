@@ -4,6 +4,6 @@ test('google search test', async ({ page }) => {
     await page.goto('https://www.google.com');
     await page.locator('textarea[name="q"]').fill('Playwright testing');
     await page.locator('textarea[name="q"]').press('Enter');
-    await expect(page).toHaveTitle(/chris/);
+    await expect(page).toHaveTitle(/Playwright test/);
 
 });
